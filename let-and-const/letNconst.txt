@@ -1,0 +1,12 @@
+- What is the difference between ***var*** and ***let***?
+You can reassign and redeclare with va
+you can't redeclare with let
+Let creates block scope
+- What is the difference between **var** and ***const***?
+You can reassign and redeclare with va
+You can't reassign with const
+Const creates block scope
+- What is the difference between **let** and **const**?
+You can't reassign with const but can with let
+- What is hoisting?
+Hoisting is when you push all the var on the top
