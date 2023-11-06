@@ -5,7 +5,7 @@ function createInstructor(firstName, lastName){
     }
 }
 /* Write an ES2015 Version */
-
+const createInstructor = (firstName,lastName) => ({firstName, lastName})
 
 
 var favoriteNumber = 42;
@@ -16,6 +16,12 @@ var instructor = {
 
 instructor[favoriteNumber] = "That is my favorite!"
 /* Write an ES2015 Version */
+
+const favoriteNumber = 42
+const instructor = {
+    firstName:"colt",
+    [favoriteNumber]: "That is my favorite!"
+}
 
 
 var instructor = {
@@ -28,7 +34,11 @@ var instructor = {
     }
   }
   /* Write an ES2015 Version */
-
+const instructor = {
+    firstName: "Colt",
+    sayHi() { return "Hi!"},
+    sayBye() { return this.firstName + " says bye!"}
+}
 
 /**  createAnimal function
   Write a function which generates an animal object. The function should accepts 3 arguments:
@@ -45,3 +55,10 @@ d.bark()  //"Woooof!"
 const s = createAnimal("sheep", "bleet", "BAAAAaaaa")
 // {species: "sheep", bleet: ƒ}
 s.bleet() //"BAAAAaaaa"
+
+function createAnimal(species, verb, noise) {
+    return {
+        species,
+        [verb]() {return noise}
+    }
+}
