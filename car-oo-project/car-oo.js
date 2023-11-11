@@ -75,3 +75,11 @@ garage.vehicles; // [Car, Motorcycle]
 
 garage.add(new Motorcycle("Honda", "Nighthawk", 2001));
 // "Sorry, we're full."
+
+
+//suggestions and improvements
+//1. In the toString method of the Vehicle class, there's an issue. The variables make, model, and year should be accessed using this.make, this.model, and this.year since they are instance variables.
+//2. The condition for checking if the garage is full (if(this.vehicles >= this.capacity)) should compare the length of the vehicles array to the capacity.
+//3. The return statement for the add method in the Garage class seems inconsistent. When a vehicle is successfully added, it returns the added vehicle. However, when the condition for vehicle type is not met, it returns a string. Consider making the return value consistent, perhaps returning a success message in both cases.
+//4. Check if the provided capacity is a positive number in the Garage constructor.
+//5. The comment suggests that myFirstVehicle.honk(); should return "Beep." but the honk method in the Vehicle class actually returns "Beep" (without the period).
