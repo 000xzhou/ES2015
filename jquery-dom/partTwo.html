@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form action="">
@@ -13,7 +14,35 @@
       <input type="text" name="rating" id="rating" />
       <button type="submit">Submit</button>
     </form>
-    <div class="output"></div>
+    <div class="errorMsg"></div>
+    <div class="sorting">
+      <button type="button" id="sortTitle">
+        Sort Title <span class="arrow down"></span>
+      </button>
+      <button type="button" id="sortRating">
+        Sort Rating <span class="arrow down"></span>
+      </button>
+    </div>
+    <ul class="output" id="output">
+      <div>
+        <li data-rating="8">
+          <span class="title">Orange</span> - <span class="rating">8</span>
+        </li>
+        <button>delete</button>
+      </div>
+      <div>
+        <li data-rating="5">
+          <span class="title">Apple</span> - <span class="rating">5</span>
+        </li>
+        <button>delete</button>
+      </div>
+      <div>
+        <li data-rating="9">
+          <span class="title">Banana</span> - <span class="rating">9</span>
+        </li>
+        <button>delete</button>
+      </div>
+    </ul>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="partTwo.js"></script>
   </body>

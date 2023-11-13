@@ -1,0 +1,51 @@
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+/* will need js to fix the arrow being up even if click the other button since they share */
+button:hover .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.errorMsg {
+  color: red;
+}
+
+.output li {
+  list-style: none;
+}
+.outputBox {
+  border: 2px solid transparent;
+  padding: 0.5rem;
+  margin: 1rem;
+  /* background: #000;
+  color: white; */
+}
+
+.outputBox:hover {
+  border: 2px solid salmon;
+}
+input {
+  padding: 0.5rem;
+}
+button {
+  background-color: snow;
+  border-color: snow;
+  padding: 0.5rem 1rem;
+}
+button:hover {
+  background-color: rgb(49, 49, 49);
+  color: snow;
+}
